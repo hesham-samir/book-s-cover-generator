@@ -1,0 +1,28 @@
+.main{
+  background-color: #D8FFDD;
+}
+
+#title1{
+  text-align: center;
+}
+
+#subtitle1{
+  text-align: center;
+  opacity: 0.6;
+}
+
+#name1{
+  text-align: center;
+}
+
+#publisher1{
+  text-align: left;
+  margin: 10px;
+  opacity: 0.6;
+}
+
+#year1{
+  text-align: left;
+  margin: 10px;
+  opacity: 0.6;
+}

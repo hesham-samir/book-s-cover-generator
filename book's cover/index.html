@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cover Designer</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./interactive.js"></script>
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <!-- nav bar -->
+        <nav class="navbar navbar-light" style="background-color: #222E50;border-radius: 20px;">
+          <p class="navbar-brand" style= "color:white; ">
+            <img src="./favicon.ico" width="50" height="50" class="d-inline-block align-top" alt="">
+            Cover Designer
+          </p>
+        </nav>
+      </div>
+      <br></br>
+<!-- main page       -->
+      <div class="container">
+      <button type="submit" class="btn btn-primary" id="tools-btn">show/hide tools</button>
+      <br></br>
+<!-- options          -->
+        <div class="row">
+          <div class="col-sm" id="tools">
+
+            <nav class="nav flex-column" style="background-color: #222E50;border-radius: 20px;">
+              <div style="color:white;margin:10px;">
+                <br></br>
+                <form>
+                  <div class="form-group row">
+                    <label for="title" class="col-sm-2 col-form-label col-form-label-sm">Book title</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="title">
+                    </div>
+                    <br></br>
+
+                    <label for="subtitle" class="col-sm-2 col-form-label col-form-label-sm">Book subtitle</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="subtitle">
+                    </div>
+
+                    <br></br>
+                    <label for="name" class="col-sm-2 col-form-label col-form-label-sm">Author name</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="name">
+                    </div>
+
+                    <br></br>
+                    <label for="publisher" class="col-sm-2 col-form-label col-form-label-sm">Pubisher</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="publisher" >
+                    </div>
+
+                    <br></br>
+                    <label for="year" class="col-sm-2 col-form-label col-form-label-sm">Publishing year</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="year">
+                    </div>
+
+                    <br></br>
+                    <label for="color" class="col-sm-2 col-form-label col-form-label-sm">Background color</label>
+                    <div class="col-sm-10">
+                    <input  class="form-control form-control-sm" id="color">
+                    </div>
+
+                    <br></br>
+                    <label for="fontColor" class="col-sm-2 col-form-label col-form-label-sm">font color</label>
+                    <div class="col-sm-10">
+                    <input  class="form-control form-control-sm" id="fontColor">
+                    </div>
+
+                    <br></br>
+                    <div class="col-auto my-1">
+                      <button type="button" name="button" id="generate">generate</button>
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+            </nav>
+          <br></br>
+          </div>
+
+
+
+<!-- book cover            -->
+          <div class="col-sm">
+            <div class="jumbotron" id = "card">
+              <h1 class="display-4" id="title1" ></h1>
+              <hr class='my-4'>
+              <h2 id="subtitle1"></h2>
+              <br></br>
+              <br></br>
+              <br></br>
+              <div id="name1"></div>
+              <div id="publisher1"></div>
+              <div id="year1"></div>
+            </div>
+          </div>
+        </div>
+        <br></br>
+      </div>
+    </div>
+
+  </body>
+  <!-- bootstap js  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
